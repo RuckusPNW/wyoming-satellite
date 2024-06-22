@@ -27,6 +27,11 @@ sudo apt-get install --no-install-recommends  \
   python3-venv
 ```
 
+Install the development files for the HDF5 library:
+```sh
+sudo apt-get install -y libhdf5-dev
+```
+
 Clone the `wyoming-satellite` repository:
 
 ```sh
@@ -216,9 +221,17 @@ sudo apt-get install --no-install-recommends  \
 From your home directory, install the openWakeWord Wyoming service:
 
 ```sh
-git clone https://github.com/rhasspy/wyoming-openwakeword.git
+git clone https://github.com/RuckusPNW/wyoming-openwakeword.git
 cd wyoming-openwakeword
 script/setup
+```
+Then after the error running the openwakeword script, run to open in venv:
+
+```sh
+source ~/wyoming-openwakeword/.venv/bin/activate
+pip install wyoming
+pip install tflite-runtime
+python -c "import wyoming; import tflite_runtime.interpreter as tflite; print('Modules are correctly installed')"
 ```
 
 Create a systemd service for it:
