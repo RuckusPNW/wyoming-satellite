@@ -1,6 +1,6 @@
 # Wyoming Satellite
 
-Remote voice satellite using the [Wyoming protocol](https://github.com/rhasspy/wyoming).
+Remote voice satellite using the [Wyoming protocol](https://github.com/rhasspy/wyoming). Fork of original with redirect to openwakeword edit that includes numpy and tensorflow in requirements.txt for openWakeWord section. Tested working 6-22-24.
 
 * Works with [Home Assistant](https://www.home-assistant.io/integrations/wyoming)
 * Local wake word detection using [Wyoming services](https://github.com/rhasspy/wyoming#wyoming-projects)
