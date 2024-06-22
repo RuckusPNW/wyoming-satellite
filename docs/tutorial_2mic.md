@@ -27,7 +27,7 @@ sudo apt-get install --no-install-recommends  \
   python3-venv
 ```
 
-Install the development files for the HDF5 library:
+Install the HDF5 library:
 ```sh
 sudo apt-get install -y libhdf5-dev
 ```
